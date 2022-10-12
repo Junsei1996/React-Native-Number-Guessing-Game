@@ -4,6 +4,7 @@ import { useState } from 'react';
 import StartGameScreen from './screens/StartGamesScreen';
 import GameScreen from './screens/GameScreen';
 import LinearGradient from 'react-native-linear-gradient';
+import Colors from './util/colors';
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
 
   return (
     <LinearGradient
-      colors={['#4e0329', '#ddb52f']}
+      colors={[Colors.deepMaroon, Colors.accent500]}
       style={styles.rootScreen}>
       <ImageBackground
         source={require('./assets/images/background.png')}
